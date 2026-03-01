@@ -33,13 +33,15 @@ if (place_meeting(x, y, oSpikes)) { // if heidi collides with the spikes
     room_restart() // restart the level
 
 }
+	
+	
 if (y > room_height or y < 0 or x > room_width or x < 0) { // if the player is outside of the room
 
     room_restart(); 
 
 }
-if (place_meeting(x, y, oSpikes)) { // if heidi collides with the spikes
+if (place_meeting(x, y, oFlag)) { // if heidi collides with the flag
 
-    room_restart() // restart the level
+room_goto_next(); // go to next level
 
 }
