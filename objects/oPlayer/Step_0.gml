@@ -38,3 +38,8 @@ if (y > room_height or y < 0 or x > room_width or x < 0) { // if the player is o
     room_restart(); 
 
 }
+if (place_meeting(x, y, oSpikes)) { // if heidi collides with the spikes
+
+    room_restart() // restart the level
+
+}
