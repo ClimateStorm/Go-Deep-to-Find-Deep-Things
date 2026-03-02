@@ -1,8 +1,6 @@
 x_speed = 0; // reset horizontal speed 
 
 y_speed += .5; // add gravity to y_speed
-
-
 if keyboard_check(vk_right) {  // if the right arrow key is pressed
 
     x_speed = walk_speed;  // set the horizontal speed to heidi's walk_speed
@@ -45,3 +43,4 @@ if (place_meeting(x, y, oFlag)) { // if heidi collides with the flag
 room_goto_next(); // go to next level
 
 }
+
